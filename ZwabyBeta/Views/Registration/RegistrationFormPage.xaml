@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.RegistrationFormPage"
+	         Padding="0,13,0,15"
+		     BackgroundColor="Aqua"
+	         Title="Registration">
+	<ScrollView>
+	<StackLayout HorizontalOptions="Center"
+			     Spacing="15">
+
+		<Label Text="Please enter the following information:"
+			   TextColor="Blue"
+		       FontAttributes="Bold"/>
+
+		<Entry Placeholder="First Name"
+			   x:Name="fn"/>
+
+		<Entry Placeholder="Last Name"
+			   x:Name="ln"/>
+
+		<Entry Placeholder="Email Address"
+			   x:Name="ea"/>
+
+		<Entry Placeholder="Phone Number"
+			   x:Name="pn"/>
+
+		<Button Text="Submit"
+				FontSize="Large"
+				BackgroundColor="White"
+				Clicked="Handle_Clicked"
+			    x:Name="button1"/>
+
+		<Label Text="Please enter one-time password:"
+			   HorizontalTextAlignment="Center"
+			   TextColor="Blue"
+		       FontAttributes="Bold"/>
+
+		<Entry Placeholder="Password" />
+		<!-- use Data Binding here? Path=Twilio~ -->
+
+		<Button Text="Finish registration"
+				FontSize="Large"
+				BackgroundColor="White"
+				Clicked="Handle_Clicked" 
+			    />
+				
+
+	</StackLayout>
+		</ScrollView>
+</ContentPage>

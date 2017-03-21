@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.ServiceLocationPage"
+		     BackgroundColor="Aqua"
+	         Title="Location">
+	<ScrollView>
+	<StackLayout VerticalOptions="StartAndExpand"
+			     Spacing="20">
+		
+	    <Label Text="Please enter service location:"
+			   FontAttributes="Bold"
+			   TextColor="Blue"/>
+		
+		<Entry Placeholder="247 W 35th St" 
+			   x:Name="addressEntry"/> 
+		
+		<Entry Placeholder="Manhattan" 
+			   x:Name="cityEntry"/> 
+
+		<Entry Placeholder="New York" 
+			   x:Name="stateEntry"/> 
+
+		<Entry Placeholder="10001" 
+			   x:Name="zipEntry"/> 
+
+		<Label Text="Please select residence type:"
+			   FontAttributes="Bold"
+			   TextColor="Blue"/>
+
+		<!-- SelectedIndex="{Binding Residence}" -->
+
+		<Picker x:Name="residencePicker">
+          <Picker.Items>
+            <x:String>House</x:String> 
+            <x:String>Apartment</x:String>
+          </Picker.Items>
+        </Picker> 
+
+		<Button Text="Next"
+				FontSize="Large"
+			    Clicked="Handle_Clicked"
+			    BackgroundColor="White"/>
+
+		<!-- CarouselView, with cleaner profiles displayed, etc. -->
+		
+	</StackLayout>
+
+	<!-- GPS map view in this area -->
+	</ScrollView>
+</ContentPage>

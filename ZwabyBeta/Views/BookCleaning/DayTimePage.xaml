@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.DayTimePage"
+		     BackgroundColor="Aqua">
+	<ScrollView>
+	<StackLayout VerticalOptions="Start"
+			     HorizontalOptions="CenterAndExpand"
+			     Spacing="25">
+	<Label Text="Please select day and time:"
+		   TextColor="Blue"
+		   FontSize="Large"
+		   />
+
+		   <!-- Add availability selection calendar View -->
+
+		   <!-- Use data bindings to show only available days/times. Need ViewModel -->
+
+		   <DatePicker x:Name="bookingDayPicker">
+		   <DatePicker.MinimumDate>
+		   01/01/2017
+			</DatePicker.MinimumDate>
+		   </DatePicker>
+
+		<Picker x:Name="timePicker">
+			<Picker.Items>
+              <x:String>8:30 AM</x:String> 
+              <x:String>1:30 PM</x:String>
+            </Picker.Items>
+        </Picker>
+			
+		<Button Text="Next"
+				FontSize="Large"
+				BackgroundColor="White"
+			    Clicked="Handle_Clicked"/>
+		
+		</StackLayout>
+
+		<!-- CarouselView? -->
+		
+		</ScrollView>
+</ContentPage>

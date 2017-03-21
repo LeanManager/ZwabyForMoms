@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.BedBathPage"
+		     BackgroundColor="Aqua">
+	<ScrollView>
+	<StackLayout VerticalOptions="Start"
+			     Spacing="30">
+		
+		   <StackLayout Orientation="Horizontal">
+			
+			    <Label Text="Please select number of bedrooms:"
+			           FontSize="Large"
+			           TextColor="Blue"/>
+
+		<Picker x:Name="bedPicker"
+				WidthRequest="40"
+				Title="1">
+			<Picker.Items>
+              <x:String>1</x:String> 
+              <x:String>2</x:String>
+			  <x:String>3</x:String> 
+              <x:String>4</x:String>
+			  <x:String>5</x:String>
+            </Picker.Items>
+        </Picker>
+		 
+		   </StackLayout>
+		
+		    <StackLayout Orientation="Horizontal" >
+			
+			      <Label Text="Please select number of bathrooms:"
+			             FontSize="Large"
+			             TextColor="Blue"/>
+			
+	    <Picker x:Name="bathPicker"
+				WidthRequest="40"
+				Title="1">
+			<Picker.Items>
+              <x:String>1</x:String> 
+              <x:String>2</x:String>
+			  <x:String>3</x:String> 
+              <x:String>4</x:String>
+			  <x:String>5</x:String>
+            </Picker.Items>
+        </Picker>
+			
+		     </StackLayout>
+
+		<!-- Bind isRunning property such that it reflects Bed/Bath selection, at runtime. Need ViewModel -->
+		     <ActivityIndicator IsRunning="true"/>
+		
+		<!-- Bind stringformat to reflect specific duration and rate. Need ViewModel -->
+		<!-- Label updates at runtime -->
+
+			<!-- Double data binding for these two labels. Pretty sure we need ViewModel -->
+			
+	    <Label Text="Approximate duration: 4.5 hours"
+			   TextColor="Blue" 
+			   FontAttributes="Bold"/>
+
+		<Label Text="Approximate rate: 100 USD"
+			   TextColor="Blue" 
+			   FontAttributes="Bold"/>
+
+		<Button Text="Next"
+			    FontSize="Large"
+			    BackgroundColor="White"
+			    Clicked="Handle_Clicked"/>
+		
+	</StackLayout>
+	</ScrollView>
+</ContentPage>

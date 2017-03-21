@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.MessagesPage"
+		     BackgroundColor="Aqua"
+	         Title="Messages">
+	<ScrollView>
+	<StackLayout VerticalOptions="Start"
+			     HorizontalOptions="Fill"
+			     Spacing = "27">
+		<!-- Messages are added to ListView at runtime through Azure -->
+		<Label  TextColor="Blue"
+				FontAttributes="Bold"
+				BackgroundColor="White"
+				VerticalTextAlignment="Center"
+				HorizontalTextAlignment="Center"
+			    x:Name="testLabel" />
+		<Label Text="New coupons and special offers!"
+				TextColor="Blue"
+				BackgroundColor="White"
+				FontAttributes="Bold"
+				VerticalTextAlignment="Center"
+				HorizontalTextAlignment="Center"
+				/>
+		<Label Text="Book your first home cleaning service!"
+				TextColor="Blue"
+				BackgroundColor="White"
+				FontAttributes="Bold"
+				VerticalTextAlignment="Center"
+				HorizontalTextAlignment="Center"
+				/>
+		<Label Text="Welcome to Zwaby!"
+				TextColor="Blue"
+				BackgroundColor="White"
+				FontAttributes="Bold"
+				VerticalTextAlignment="Center"
+				HorizontalTextAlignment="Center"
+				/>
+	</StackLayout>
+		</ScrollView>
+</ContentPage>

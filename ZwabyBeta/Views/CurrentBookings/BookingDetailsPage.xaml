@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	         x:Class="ZwabyBeta.BookingDetailsPage"
+	         BackgroundColor="Aqua"
+	         Title="Details">
+<!-- ResourceDictionary -->
+
+	<!--<ContentPage.Resources>
+	     <ResourceDictionary>
+	        <local:ImageResourceConverter x:Key="imageResourceCvt" />
+		</ResourceDictionary>
+	</ContentPage.Resources>-->
+
+	<ScrollView>
+
+		<StackLayout Spacing="15"
+			         Padding="0,15,0,15"
+			         x:Name="bookingDetailsStack">
+
+			<!-- Binding to individual images in Models.Images folder-->
+
+			<Label Text="Service day and time: March 21st, 2017 at 8:30 AM"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   HorizontalTextAlignment="Center"
+				   FontAttributes="Bold" />
+
+			<!-- In ZwabyBeta request not just ZIP code; use ZIP to find nearest available cleaners.
+			     Display GPS view and set current location as default?
+			     Or just request full address with binding to GPS property~ -->
+
+			<Label Text="Service location: Upper East Side in Manhattan, NY 10021"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   HorizontalTextAlignment="Center"
+				   FontAttributes="Bold" />
+
+			<Label Text="Cleaning professional name: Paulette Wright"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"/>
+			
+			<Label Text="Approximate total rate: 100 USD"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"/>
+
+			<Label Text="Approximate service duration: 4.5 hours"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"/>
+
+			<Label Text="Cleaning service rating: 5 stars"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"/>
+
+			<Label Text="Zwaby platform rating: 5 stars"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"/>
+
+		</StackLayout>
+
+	</ScrollView>
+	
+</ContentPage>

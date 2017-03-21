@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="ZwabyBeta.PaymentPage"
+		     BackgroundColor="Aqua">
+	<ScrollView>
+	<StackLayout Spacing="15">
+		
+		<Label Text="Instructions for cleaning professional (optional):"
+			   TextColor="Blue"
+		       FontAttributes="Bold"/>
+
+		<!-- Replace this view with a box entry~ -->
+		<Entry BackgroundColor="White"
+			   
+			   HeightRequest="50"/>
+
+		<Label Text="Please enter payment information:"
+			   FontAttributes="Bold"
+			   TextColor="Blue" />
+		
+		<Entry Placeholder="Name on card"/>
+
+		<Entry Placeholder="Card number"/>
+
+		<Entry Placeholder="Expiration date"/>
+
+		<Entry Placeholder="Security code"/>
+
+		<Entry Placeholder="Billing address"/>
+
+		<Button Text="Finish booking"
+				FontAttributes="Bold"
+				FontSize="Large"
+			    BackgroundColor="White"
+			    Clicked="Handle_Clicked"/>
+		
+	</StackLayout>
+	</ScrollView>
+</ContentPage>
