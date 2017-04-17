@@ -2,32 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		     x:Class="ZwabyBeta.PaymentPage"
-		     BackgroundColor="Aqua">
+		     BackgroundColor="Aqua"
+	         Title="Payment"
+	         Padding="12,25,12,25">
 	<ScrollView>
-	<StackLayout Spacing="15">
+		<StackLayout>	
+	<!-- /////////////////////////////////////////////////////////////////////////////////// -->			
+	<StackLayout Spacing ="20"
+				 x:Name="labelStack">	
+		<!-- Bind stringformat to reflect specific duration and rate. Need ViewModel -->
+		<!-- Label updates at runtime -->
+
+		<!-- Double data binding for these two labels. Pretty sure we need ViewModel -->
+			
+	    <Label TextColor="Blue" 
+			   FontAttributes="Bold"
+			   x:Name="durationLabel"
+			   Text="Approximate duration: 4 hours"/>
+
+		<Label TextColor="Blue" 
+			   FontAttributes="Bold"
+			   x:Name="rateLabel"
+			   Text="Approximate rate: 120 USD"/>
+	 </StackLayout>		
+     <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+	 <!-- /////////////////////////////////////////////////////////////////////////////////// -->	
+     <StackLayout Spacing="15">
 		
-		<Label Text="Instructions for cleaning professional (optional):"
-			   TextColor="Blue"
-		       FontAttributes="Bold"/>
-
-		<!-- Replace this view with a box entry~ -->
-		<Entry BackgroundColor="White"
-			   
-			   HeightRequest="50"/>
-
 		<Label Text="Please enter payment information:"
 			   FontAttributes="Bold"
 			   TextColor="Blue" />
+
+		<!-- Hide CCV entry and put in Exception measures in place -->
 		
-		<Entry Placeholder="Name on card"/>
+		<Entry Placeholder="Name on card"
+			   x:Name="cardName"/>
+				
+		<Entry Placeholder="Card number"
+			   x:Name="cardNumber"/>
 
-		<Entry Placeholder="Card number"/>
+		<Entry Placeholder="Expiration date"
+			   x:Name="expDate"/>
 
-		<Entry Placeholder="Expiration date"/>
+		<Entry Placeholder="Security code"
+			   IsPassword="true"
+			   x:Name="cardCode"/>
 
-		<Entry Placeholder="Security code"/>
-
-		<Entry Placeholder="Billing address"/>
+		<Entry Placeholder="Billing zip code"
+			   x:Name="cardZip"/>
 
 		<Button Text="Finish booking"
 				FontAttributes="Bold"
@@ -35,6 +58,8 @@
 			    BackgroundColor="White"
 			    Clicked="Handle_Clicked"/>
 		
+	</StackLayout>
+	<!-- /////////////////////////////////////////////////////////////////////////////////// -->
 	</StackLayout>
 	</ScrollView>
 </ContentPage>

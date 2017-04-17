@@ -2,21 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	         x:Class="ZwabyBeta.ServiceSelectionPage"
+	         xmlns:local="clr-namespace:ZwabyBeta;assembly=ZwabyBeta"
 	         BackgroundColor="Aqua"
-	         Title="Service Selection"
-	         Padding="0,30,0,20">
+	         Title="Service"
+	         Padding="15,30,15,20">
+	
+	<!--<ContentPage.Resources>
+        <ResourceDictionary>           
+            <local:ImageResourceConverter x:Key="imageResourceCvt" />
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+	
 	<ScrollView>
 		
 		<StackLayout VerticalOptions="Start"
 			         HorizontalOptions="Center"
-			         Spacing="50">
-	        <Label Text="Please select cleaning service:" 
+			         Spacing="20">
+			
+	        <Label Text="Please select desired cleaning service:" 
 		           TextColor="Blue"
 				   FontSize="Large"
-		           FontAttributes="Bold"/>
-			<Label Text="CarouselView goes here :)"
-			       TextColor="Blue"
+				   BackgroundColor="White"
+		           FontAttributes="Bold"
 			       HorizontalTextAlignment="Center"/>
+
+			<!-- <ScrollView Orientation="Horizontal"> -->
+				
+			<StackLayout x:Name="ccStack" />
+
+		    <!-- </ScrollView> -->
+										
 			<Button Text="Next"
 			        BackgroundColor="White"
 			        FontSize="Large"

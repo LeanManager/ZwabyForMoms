@@ -2,11 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		     x:Class="ZwabyBeta.BedBathPage"
-		     BackgroundColor="Aqua">
+		     BackgroundColor="Aqua"
+	         Title="Details">
 	<ScrollView>
+		<StackLayout>
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////// -->	
 	<StackLayout VerticalOptions="Start"
-			     Spacing="30">
-		
+			     Spacing="30"
+				 x:Name="topStack">
+			
+	<!-- /////////////////////////////////////////////////////////////////////////////////// -->	
 		   <StackLayout Orientation="Horizontal">
 			
 			    <Label Text="Please select number of bedrooms:"
@@ -19,14 +25,16 @@
 			<Picker.Items>
               <x:String>1</x:String> 
               <x:String>2</x:String>
-			  <x:String>3</x:String> 
+			  <x:String>3</x:String>
               <x:String>4</x:String>
 			  <x:String>5</x:String>
             </Picker.Items>
         </Picker>
 		 
 		   </StackLayout>
-		
+	 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+	 <!-- /////////////////////////////////////////////////////////////////////////////////// -->		
 		    <StackLayout Orientation="Horizontal" >
 			
 			      <Label Text="Please select number of bathrooms:"
@@ -46,27 +54,37 @@
         </Picker>
 			
 		     </StackLayout>
+	  <!-- /////////////////////////////////////////////////////////////////////////////////// -->		
+
+	  </StackLayout>
+
+
+		
+		<StackLayout Spacing="35">	
 
 		<!-- Bind isRunning property such that it reflects Bed/Bath selection, at runtime. Need ViewModel -->
-		     <ActivityIndicator IsRunning="true"/>
-		
-		<!-- Bind stringformat to reflect specific duration and rate. Need ViewModel -->
-		<!-- Label updates at runtime -->
+		     <!--<ActivityIndicator IsRunning="true"
+			                    x:Name="indicator"/>-->
+				
+		 <StackLayout Spacing="10">
+					
+			<Label Text="Instructions for cleaning professional (optional):"
+			   TextColor="Blue"
+		       FontAttributes="Bold"
+			   HorizontalTextAlignment="Start"	/>
 
-			<!-- Double data binding for these two labels. Pretty sure we need ViewModel -->
-			
-	    <Label Text="Approximate duration: 4.5 hours"
-			   TextColor="Blue" 
-			   FontAttributes="Bold"/>
-
-		<Label Text="Approximate rate: 100 USD"
-			   TextColor="Blue" 
-			   FontAttributes="Bold"/>
+		<!-- Replace this view with a box entry~ -->
+		<Entry BackgroundColor="White"
+			   HeightRequest="50"/>	
+					
+		</StackLayout>
 
 		<Button Text="Next"
 			    FontSize="Large"
 			    BackgroundColor="White"
 			    Clicked="Handle_Clicked"/>
+
+	</StackLayout>			
 		
 	</StackLayout>
 	</ScrollView>

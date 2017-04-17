@@ -3,23 +3,19 @@
 	         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	         x:Class="ZwabyBeta.CustomerProfilePage"
 	         Title="Profile"
-	         Padding="0,15,0,15"
+	         Padding="0,22,0,15"
 	         BackgroundColor="Aqua">
 
 	  <ScrollView>
 		
-          <StackLayout Spacing="12"
-		               VerticalOptions="StartAndExpand">
+          <StackLayout Spacing="25"
+		               VerticalOptions="Start">
 
-		      <Label Text="Zwaby Platform Rating : 5 stars"
+
+		<StackLayout>	
+			<Label Text="Carlos"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
-				   TextColor="Blue"
-			       HorizontalTextAlignment="Center"/>
-		
-			<Label Text="Carlos A"
-			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 				   HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit first name "
@@ -28,9 +24,13 @@
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
 
-			<Label Text="Lara Maldonado"
+			</StackLayout>
+
+			<StackLayout>
+
+			<Label Text="Lara"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit last name "
@@ -38,10 +38,14 @@
 		        HorizontalOptions="Center"
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
+
+			</StackLayout>
+
+			<StackLayout>
 			
 			<Label Text="zwabyapp@gmail.com"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit email address "
@@ -50,9 +54,12 @@
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
 
+		        </StackLayout>
+
+			<StackLayout>
 			<Label Text="469-995-6899"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit phone number "
@@ -61,9 +68,13 @@
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
 
-	    	<Label Text="Infinite-dimensional Hilbert Space"
+		        </StackLayout>
+
+			<StackLayout>
+			
+	    	<Label Text="Manhattan, NY 10021"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit default service address "
@@ -72,9 +83,13 @@
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
 
+		        </StackLayout>
+
+			<StackLayout>
+			
 		<Label Text="Payment Details"
 			       FontAttributes="Bold"
-				   BackgroundColor="White"
+				   
 				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 		<Button Text=" Edit payment information "
@@ -82,6 +97,14 @@
 		        HorizontalOptions="Center"
 		        HeightRequest="23"
 		        FontAttributes="Italic"/>
+
+			</StackLayout>
+
+			<Label Text="Zwaby Platform Rating : 5 stars"
+			       FontAttributes="Bold"
+				   
+				   TextColor="Blue"
+			       HorizontalTextAlignment="Center"/>
 
 	</StackLayout>
 		

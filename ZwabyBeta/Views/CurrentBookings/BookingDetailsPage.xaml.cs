@@ -7,7 +7,8 @@ namespace ZwabyBeta
 {
 	public partial class BookingDetailsPage : ContentPage
 	{
-		public BookingDetailsPage(Booking bookingSelection)
+		//public BookingDetailsPage(Booking bookingSelection)
+        public BookingDetailsPage()
 		{
 			// var textPadding = new Thickness(5, 0, 5, 0);
 

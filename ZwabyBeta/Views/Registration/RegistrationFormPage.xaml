@@ -36,7 +36,8 @@
 			   TextColor="Blue"
 		       FontAttributes="Bold"/>
 
-		<Entry Placeholder="Password" />
+		<Entry Placeholder="Password"
+			   x:Name="otpEntry"/>
 		<!-- use Data Binding here? Path=Twilio~ -->
 
 		<Button Text="Finish registration"

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
+using Xamarin.FormsBook.Toolkit;
 
 namespace ZwabyBeta
 {
-	public class BedBathViewModel : INotifyPropertyChanged
+	public class BedBathViewModel : ViewModelBase
 	{
-		public event PropertyChangedEventHandler PropertyChanged;
-
+		// private backing fields for public properties
 
 		public BedBathViewModel()
 		{

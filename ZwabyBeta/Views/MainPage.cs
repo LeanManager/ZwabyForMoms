@@ -27,7 +27,7 @@ namespace ZwabyBeta
 			{
 				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button)),
 				BackgroundColor = Color.White,
-				Text = "Current Bookings"
+				Text = "Current Booking"
 			};
 
 			var button3 = new Button
@@ -96,7 +96,7 @@ namespace ZwabyBeta
 
 		private async void OnCurrentBookings(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new BookingListPage());
+			await Navigation.PushAsync(new BookingDetailsPage());
 		}
 
 		private async void OnMessages(object sender, EventArgs e)

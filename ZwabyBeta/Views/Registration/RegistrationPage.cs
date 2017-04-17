@@ -10,6 +10,7 @@ namespace ZwabyBeta
 		{
 			this.Title = "Welcome";
 			this.BackgroundColor = Color.Aqua;
+			//this.BackgroundColor = Color.FromHex("#98f5ff");
 			this.Padding = new Thickness(0, 12, 0, 15);
 
 			var button1 = new Button
@@ -68,10 +69,10 @@ namespace ZwabyBeta
 						FontAttributes = FontAttributes.Bold
 					},
 					new Image
-				   {
-				   Source = ImageSource.FromResource("ZwabyBeta.Models.blue-69762_640.jpg"),
-				   VerticalOptions = LayoutOptions.Start,
-				   HorizontalOptions = LayoutOptions.Center
+				    {
+				     Source = ImageSource.FromResource("ZwabyBeta.Models.blue-69762_640.jpg"),
+				     VerticalOptions = LayoutOptions.Start,
+				     HorizontalOptions = LayoutOptions.Center
 					},
 					new Label
 					{

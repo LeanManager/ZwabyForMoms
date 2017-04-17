@@ -11,7 +11,9 @@ namespace ZwabyBeta
 		{
 			InitializeComponent();
 
-			this.Padding = new Thickness(15, 30, 15, 0);
+			this.Padding = new Thickness(15, 25, 15, 0);
+
+			topStack.Padding = new Thickness(0, 0, 0, 30);
 
 			//< Label Text = "{Binding Source={x:Reference bedPicker},
 

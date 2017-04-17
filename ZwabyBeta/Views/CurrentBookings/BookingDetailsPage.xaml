@@ -20,51 +20,120 @@
 
 			<!-- Binding to individual images in Models.Images folder-->
 
-			<Label Text="Service day and time: March 21st, 2017 at 8:30 AM"
-				   BackgroundColor="White"
+		<StackLayout Spacing="5">	
+
+			<Label Text="Service day and time:"
+				   
 				   TextColor="Blue"
 				   HorizontalTextAlignment="Center"
-				   FontAttributes="Bold" />
+				   FontAttributes="Bold"
+			       x:Name="label1"/>
+			<Label Text="May 1st, 2017 at 8:30 AM"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+				   HorizontalTextAlignment="Center" />
+
+		</StackLayout>		
+			
 
 			<!-- In ZwabyBeta request not just ZIP code; use ZIP to find nearest available cleaners.
 			     Display GPS view and set current location as default?
 			     Or just request full address with binding to GPS property~ -->
 
-			<Label Text="Service location: Upper East Side in Manhattan, NY 10021"
-				   BackgroundColor="White"
+		<StackLayout Spacing="5">	
+
+			<Label Text="Service location:"
+				   
 				   TextColor="Blue"
 				   HorizontalTextAlignment="Center"
-				   FontAttributes="Bold" />
-
-			<Label Text="Cleaning professional name: Paulette Wright"
+				   FontAttributes="Bold" 
+			       x:Name="label2"/>
+			<Label Text="Upper East Side in Manhattan, NY 10021"
 				   BackgroundColor="White"
 				   TextColor="Blue"
-				   FontAttributes="Bold"
-			       HorizontalTextAlignment="Center"/>
+				   HorizontalTextAlignment="Center"/>
+
+		</StackLayout>
 			
-			<Label Text="Approximate total rate: 100 USD"
-				   BackgroundColor="White"
+			
+		<StackLayout Spacing="5">	
+
+			<Label Text="Cleaning professional name:"
+				   
 				   TextColor="Blue"
 				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"
+			       x:Name="label3"/>
+			<Label Text="Paulette Wright"
+				   BackgroundColor="White"
+				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 
-			<Label Text="Approximate service duration: 4.5 hours"
-				   BackgroundColor="White"
+		</StackLayout>
+			
+			
+       <StackLayout Spacing="5"> 
+			
+			<Label Text="Approximate total rate:"
+				   
 				   TextColor="Blue"
 				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"
+			       x:Name="label4"/>
+			<Label Text="120 USD"
+				   BackgroundColor="White"
+				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 
-			<Label Text="Cleaning service rating: 5 stars"
-				   BackgroundColor="White"
+		</StackLayout>	
+			
+			
+        <StackLayout Spacing="5">
+			
+			<Label Text="Approximate service duration:"
+				   
 				   TextColor="Blue"
 				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"
+			       x:Name="label5"/>
+			<Label Text="4 hours"
+				   BackgroundColor="White"
+				   TextColor="Blue"
+			       HorizontalTextAlignment="Center"/>
+		</StackLayout>	
+			
+
+		<StackLayout Spacing="5">	
+
+			<Label Text="Cleaning service rating:"
+				   
+				   TextColor="Blue"
+				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"
+			       x:Name="label6"/>
+			<Label Text="5 stars"
+				   BackgroundColor="White"
+				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
 
-			<Label Text="Zwaby platform rating: 5 stars"
-				   BackgroundColor="White"
+		</StackLayout>	
+			
+			
+		<StackLayout Spacing="5">	
+			
+			<Label Text="Zwaby platform rating:"
+				   
 				   TextColor="Blue"
 				   FontAttributes="Bold"
+			       HorizontalTextAlignment="Center"
+			       x:Name="label7"/>
+			<Label Text="5 stars"
+				   BackgroundColor="White"
+				   TextColor="Blue"
 			       HorizontalTextAlignment="Center"/>
+				
+		</StackLayout>	
+			
 
 		</StackLayout>
 

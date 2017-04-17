@@ -11,9 +11,9 @@ namespace ZwabyBeta
 		{
 			InitializeComponent();
 
-			this.Padding = new Thickness(0, 30, 0, 0);
+			this.Padding = new Thickness(10, 30, 10, 0);
 
-			testLabel.Text = "Your booking has been confirmed for Tuesday, March 21st at 8:30am.\nYou will find details in 'Current Bookings'";
+			testLabel.Text = "Your booking has been confirmed for Monday, May 1st at 8:30am.\nYou will find details in 'Current Booking'";
 		}
 	}
 }

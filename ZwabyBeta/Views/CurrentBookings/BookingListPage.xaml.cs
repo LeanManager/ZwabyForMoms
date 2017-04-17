@@ -17,10 +17,10 @@ namespace ZwabyBeta
 			// TODO: Platform-specific custom renderers for ListView UI details
 		}
 
-		async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-		{
-			Booking selection = (Booking)e.Item;
-			await Navigation.PushAsync(new BookingDetailsPage(selection));
-		}
+		//async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+		//{
+		//	Booking selection = (Booking)e.Item;
+		//	await Navigation.PushAsync(new BookingDetailsPage(selection));
+		//}
 	}
 }
