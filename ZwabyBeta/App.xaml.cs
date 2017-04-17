@@ -1,26 +1,42 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Microsoft.Practices.Unity;
+using Xamarin.Forms;
+using ZwabyBeta.Services;
+using ZwabyBeta.Extensions;
 // using SQLitePCL;
 
 namespace ZwabyBeta
 {
 	public partial class App : Application
 	{
+        private readonly IUnityContainer _unityContainer;
+
 		// TODO: Splash screen with Zwaby logo as background image as Navigation initializer
 
 		public App()
 		{
 			InitializeComponent();
 
-			// if statement. Check registrationStatus boolean, then assign a nav page accordingly
-			// check customer ID and registrationStatus in SQLite Database
-			// function that takes int ID and returns boolean registrationStatus
-
-			MainPage = new NavigationPage(new RegistrationPage());
+            _unityContainer = new UnityContainer();
+            ConfigureContainer();
+            // if statement. Check registrationStatus boolean, then assign a nav page accordingly
+            // check customer ID and registrationStatus in SQLite Database
+            // function that takes int ID and returns boolean registrationStatus
+            
+            // Proccessing navigation OnStart instead.
+			//MainPage = new NavigationPage(new RegistrationPage());
 		}
 
-		// Azure SQL cloud database service instead?
+        private void ConfigureContainer()
+        {
+            _unityContainer.RegisterSingleton<INavigationService, NavigationService>();
 
-		static CustomerDatabase database;
+            _unityContainer.RegisterType<RegistrationViewModel>();
+        }
+
+        // Azure SQL cloud database service instead?
+
+        static CustomerDatabase database;
 
 		public static CustomerDatabase Database
 		{
@@ -35,10 +51,11 @@ namespace ZwabyBeta
 			}
 		}
 
-		protected override void OnStart()
+		protected override async void OnStart()
 		{
-			// Handle when your app starts
-		}
+            var navigationService = _unityContainer.Resolve<INavigationService>();
+            await navigationService.NavigateToAsync<RegistrationViewModel>();
+        }
 
 		protected override void OnSleep()
 		{
