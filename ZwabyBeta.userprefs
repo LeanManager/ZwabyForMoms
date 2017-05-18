@@ -1,0 +1,12 @@
+﻿<Properties StartupConfiguration="{3753058C-488F-4762-88CB-DE6D3B3AA9FA}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jers007/Projects/ZwabyForMoms/ZwabyBeta/App.xaml.cs" relfile="ZwabyBeta/App.xaml.cs" line="29" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ZwabyBeta.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9316175E-3C4F-4EB1-A822-D7D35895477E" />
+  <MultiItemStartupConfigurations />
+</Properties>
